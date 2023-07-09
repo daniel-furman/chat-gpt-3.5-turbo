@@ -1,24 +1,12 @@
-import os
 import time
 import logging
-from datetime import datetime
-
 import gradio as gr
 
 from src.llm_boilers import llm_boiler
 
-# Setup
 
-# Logging
 logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
 logging.warning("READY. App started...")
-
-# Model loader
-# if os.environ.get("OPENAI_API_KEY") is None:
-# raise ValueError(
-# "OPENAI_API_KEY environment variable must be set as a secret via the Settings in Hugging Face."
-# )
-model_id = "gpt-3.5-turbo"
 
 
 class Chat:
@@ -103,10 +91,9 @@ class Chat:
 
 
 def call_inf_server(prompt, openai_key):
-
     model_id = "gpt-3.5-turbo"  # "gpt-3.5-turbo-16k",
     model = llm_boiler(model_id, openai_key)
-    logging.warning(f"Inf with model_id: {model_id} using prompt: {prompt}")
+    logging.warning(f'Inf via "{model_id}"" for prompt "{prompt}"')
 
     try:
         # run text generation

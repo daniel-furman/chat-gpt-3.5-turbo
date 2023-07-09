@@ -7,3 +7,4 @@ Chatbot front-end for OpenAI's chat-gpt-3.5 API. Designed to be a base template 
 
 See running [web app](https://huggingface.co/spaces/dfurman/chat-gpt-3.5-turbo) on 🤗 demonstrating a basic deployment. 
 
+![basic conversation completion](assets/basic_usage.gif)

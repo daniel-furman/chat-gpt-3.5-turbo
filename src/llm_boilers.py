@@ -104,7 +104,7 @@ def gpt(
                 }
             )
 
-    logging.warning("Input to openai api call:", messages)
+    logging.warning(f"Input to openai api call: {messages}")
 
     chat_completion = openai.ChatCompletion.create(
         model=model,
