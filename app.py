@@ -118,7 +118,7 @@ with gr.Blocks(
     gr.Markdown(
         """<h1><center>Chat with gpt-3.5-turbo</center></h1>
 
-        This is a lightweight demo of gpt-3.5-turbo conversation completion. It was designed to be a template for in-context learning applications to be built on top of.
+        This is a lightweight demo of gpt-3.5-turbo conversation completion. It was designed as a template for in-context learning applications to be built on top of.
 """
     )
     conversation = Chat()
@@ -130,7 +130,7 @@ with gr.Blocks(
                 value="",
                 type="password",
                 placeholder="sk..",
-                info="You have to provide your own openai API key to use the app.",
+                info="You have to provide your own OpenAI API key.",
             )
     chatbot = gr.Chatbot().style(height=400)
     with gr.Row():
