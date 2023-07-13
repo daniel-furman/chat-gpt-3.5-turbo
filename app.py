@@ -166,11 +166,6 @@ with gr.Blocks(
             "biased, or otherwise offensive outputs.",
             elem_classes=["disclaimer"],
         )
-    with gr.Row():
-        gr.Markdown(
-            "[Privacy policy](https://gist.github.com/samhavens/c29c68cdcd420a9aa0202d0839876dac)",
-            elem_classes=["disclaimer"],
-        )
 
     submit_event = msg.submit(
         fn=conversation.user_turn,
